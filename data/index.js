@@ -7,7 +7,7 @@ module.exports = {
         return new Promise ((resolve, reject) =>{
             fs.readFile(urlData,'utf8',(err,dataRead)=>{
                 if(err) reject (err)
-                resolve(JSON.stringify(dataRead));
+                resolve(dataRead);
             })
         });
     }
